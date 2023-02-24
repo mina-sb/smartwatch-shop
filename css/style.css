@@ -65,6 +65,7 @@ ul{
     background-color: var(--second-color);
     width: 100%;
     transition: all ease 0.55s;
+    z-index: 100;
 }
 ul li{
     list-style: none;
