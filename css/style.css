@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive;
+}
+body{
+    background-color:rgb(238, 238, 238);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    align-items: center;
+}
+button{
+    background-color:coral ;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius:5px ;
+    color: #fff;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(238, 238, 238);
+        border: 1px solid;
+    color: #000;
+
+}
+ul{
+    display: none;
+}
+ul li{
+    display: inline;
+    margin: 1rem;
+}
+ul li a:hover{
+    color: coral;
+    cursor: pointer;
+}
+.responsive-menu{
+    display: inline;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0rem 2rem;   
+}
+.info-section{
+    flex: 0 1 100%;
+    order: 2;
+}
+h1{
+    font-size: 3em;
+    margin-top: 3rem;
+}
+.pink-txt{
+    color: coral;
+}
+.sub-titr{
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+}
+.discription{
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-size: 0.8em;
+    text-align: justify;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.gallery > div{
+   flex: 0 0 100%;
+   background-color: #fff;
+   border-radius: 7px;
+   text-align: center;
+   padding-top: 1rem;
+   cursor: pointer;
+   transition: 0.6s all;
+   margin: 1rem 0.5rem;
+}
+
+.gallery > div > img{
+    width: 12rem;
+    margin-bottom: 0.5rem;
+ }
+ .gallery > div > p{
+    margin: 0.7rem;
+ }
+.img-section{
+    flex: 0 1 100%;
+}
+.main-img{
+    width: 95%;
+}
+@media screen and (min-width:390px) {
+    h1{
+        font-size: 4em;
+    }
+    .gallery > div{
+        flex: 0 0 45%;}
+        .gallery > div > img{
+            width: 6rem;
+            margin-bottom: 0.5rem;
+         }
+         .gallery > div:hover{
+            transform: scale(1.1)
+           
+         }
+}
+@media screen and (min-width: 500px) {
+    section{
+        flex-direction: row;
+        padding: 1rem 5rem;
+    }
+}
+@media screen and (min-width: 675px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 0.5rem;
+    }
+    .responsive-menu{
+        display: none;
+    }
+    ul{
+        display: block;
+    }
+    section{
+        flex-direction: row;
+        padding: 1rem 2rem;
+    }
+   
+    .discription{
+        width: 60%;
+        margin-top: 1rem;
+        line-height: 2rem;
+    }
+   
+  
+}
+@media screen and (min-width: 800px) {
+    nav{
+        padding: 1rem 5rem;
+    }
+    section{
+        flex-direction: row;
+        padding: 1rem 3rem;
+    }  
+     .gallery{
+        order: 2;
+        padding-right: 1rem;
+        flex-wrap: nowrap;
+    }
+    .gallery > div{
+        flex: 0 0 33%;}
+}
+@media screen and (min-width: 900px) {
+    .info-section{
+        order:1;
+        flex: 0 1 50%;
+    }
+    .img-section{
+        order: 2;
+        flex: 0 1 50%;
+        padding-left: 2rem;
+    }
+    .discription{
+        width: 100%;
+    }
+    .main-img{
+        width:100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .gallery{
+        padding-right: 6rem;
+    }
+}
