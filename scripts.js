@@ -22,3 +22,12 @@ menuBtn.onclick = () => {
     menu.classList.replace("open", "close");
   }
 };
+
+const sr = ScrollReveal({
+  distance: "70px",
+  duration: 2700,
+  reset: true,
+});
+
+sr.reveal(".info-section", { delay: 200, origin: "bottom" });
+sr.reveal(".img-section", { delay: 350, origin: "top" });
